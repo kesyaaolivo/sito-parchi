@@ -660,7 +660,7 @@ footer nav ul li a:hover {
   }
   @media (max-width:600px) {
     body {width: 100%;}
-    .immagine {width: 100%;
+    .immagine {width: 600px;
   }
   header {
     overflow-x: hidden;
