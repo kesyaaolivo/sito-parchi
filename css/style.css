@@ -1,823 +1,911 @@
 body {
-   display: block;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.immagine {
+ width: 100%;
+height: auto;
+ display: block;
 }
 header {
-  max-width: 1000px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  max-width: 100%;
     display: flex;
     justify-content: space-between;
-}
-header p {
-    font-weight: bold;
-    color: #0E2210;
-    margin-left: 40px;
+    padding: 20px 40px 20px 0;
 }
 
+.italia {
+  font-weight: bold;
+  color: #0E2210;
+  text-decoration: none;
+}
+.italia p:hover {
+  color: #8BA28E;
+    text-decoration: underline;
+}
 header nav ul {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-right: -440px;
     list-style: none;
     display: flex;
     gap: 60px;
     font-weight: medium;
-
 }
 header nav a {
-    text-decoration: none;
-    color: #0E2210;
-    font-size: 10pt;
+  text-decoration: none;
+  color: #0E2210;
+  font-size: 10pt;
 }
 header nav a:hover {
-    color: #8BA28E;
-    text-decoration: underline;
+  color: #8BA28E;
+  text-decoration: underline;
 }
 .home-main h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  font-size: 35pt;
+color: white;
+padding-left: 40px;
+margin-top: -120px ;
 }
 .bio {
-    color: white;
-    margin-left: 40px ;
-    margin-top: -22px;
-    margin-bottom: 80px;
+  color: white;
+  padding-left: 40px;
+  margin-top: -20px;
+  font-size: 12pt;
+  
 }
 .home-main h3 {
-    color: #0E2210;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    font-size: 25px;
+  color: #0E2210;
+  padding-left: 40px;
+  padding-top: 40px;
+  font-size: 25px;
 }
 p {
-    color: #0E2210;
-    margin-left: 40px;
+  color: #0E2210;
+ padding-left: 40px;
+ font-size: 12pt;
+ line-height: 1.6;
 }
 .foto {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+ padding: 40px;
+ gap: 2vw; 
 }
 .foto img {
-  width: 300px;
-  height: auto;
+max-width: 100%;
+width: 300px;
+height: auto;
+transition: filter 0.3s ease;
 }
-
+.foto img:hover {
+  filter: brightness(0.5);
+}
+.foto a {
+  text-decoration: none;
+  color: inherit;
+}
+.foto nav h5 {
+  color: #0E2210;
+  font-size: 10pt;
+  text-align: center;
+}
+.foto nav h5:hover {
+  color: #8BA28E;
+  text-decoration: underline;
+}
 .custom-line {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 60px;
-    height: 1pt;
-    border: none;
-    background-color: #0E2210;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+  height: 1pt;
+  border: none;
+  background-color: #0E2210;
 }
-nav.cinque {
-    margin-left: 40px;
+.atti {
+  display: flex;
+  align-items: center;
+  padding-left: 40px ;
+  max-width: 1200px;
 }
-nav.cinque img{
+.atti-img {
+  max-width: 100%;
   width: 650px;
   height: auto;
+  transition: filter 0.3s ease;
 }
-h1.h1-2 {
-    color: #0E2210;
-    margin-left: 820px;
-    margin-top:-250px;
+.atti-img:hover {
+  filter: brightness(0.7);
 }
-p.parchi {
-    margin-left: 820px;
-    margin-top: -10px;
+.atti-text {
+  max-width: 40%;
+}
+.atti-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.atti-link:hover h2 {
+  color: #8BA28E;
+  text-decoration: underline;
+}
+
+.atti-text h2 {
+  padding-left: 40px;
+  font-size: 25px;
+}
+
+.atti-text p {
+max-width: 90%;
+
 }
 footer {
-    margin-top: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0E2210;
-    padding: 30px 40px;
-    font-size: 12px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0E2210;
+  font-size: 12px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
 footer p {
-    color: white;
-    margin: 0;
-    font-size: 16px;
-    
+  color: white;
+  font-size: 16px;
+  padding-left: 45px;
+ 
 }
 footer nav ul {
-    list-style: none;
-    display: flex;
-    gap: 60px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding-right: 40px;
 }
 
 footer nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 footer nav ul li a:hover {
-    color: #8BA28E;
-    text-decoration: underline;
+  color: #8BA28E;
+  text-decoration: underline;
 }
 .main-att h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  font-size: 35pt;
+color: white;
+padding-left: 40px;
+margin-top: -120px ;
 }
 .des p {
-    margin-top: 120px;
-    margin-bottom: 60px;
-    margin-left: 40px;
+  padding-top: 65px;
+ padding-left: 40px;
+ padding-bottom: 40px;
+ line-height: 1.6;
+}
+.fotopa {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 30px;
+  max-width: 1200px;
+  padding-left: 40px;
+  align-items: center;
+  
 }
 .foto-att {
-    display: flex;
+  display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  gap: 10px;
+  gap: 20px;
+  
 }
 .foto-att img {
-    width: 360px;
-    height: auto;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
 }
 .paragrafo p {
-    background-color: #0E2210;
-    color: white;
-    margin-top: -554px;
-    margin-left: 510px;
-    padding: 52px 0 52px 70px;
-    font-weight: lighter;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
 }
 .main-att h3 {
-    margin-left: 40px;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    color: #0E2210;
+  padding-left: 40px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  color: #0E2210;
 }
 .uno-att h4 {
-    margin-left: 40px;
-    color: #0E2210;
+  padding-left: 40px;
+  color: #0E2210;
 }
 .uno-att ul li {
-    color: #0E2210;
-    margin-left: 550px;
-    margin-top: -35px;
-    margin-bottom: 60px;
+  color: #0E2210;
+  margin-left: 550px;
+  margin-top: -35px;
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 .due-att h4 {
-    margin-left: 40px;
-    color: #0E2210;
+  margin-left: 40px;
+  color: #0E2210;
 }
 .due-att ul li {
-    color: #0E2210;
-    margin-left: 550px;
-    margin-top: -40px;
-    margin-bottom: 60px;
+  color: #0E2210;
+  margin-left: 550px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 .tre-att h4 {
-    margin-left: 40px;
-    color: #0E2210;
+  margin-left: 40px;
+  color: #0E2210;
 }
 .tre-att ul li {
-    color: #0E2210;
-    margin-left: 550px;
-    margin-top: -40px;
-    margin-bottom: 60px;
+  color: #0E2210;
+  margin-left: 550px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 .quattro-att h4 {
-    margin-left: 40px;
-    color: #0E2210;
+  margin-left: 40px;
+  color: #0E2210;
 }
 .quattro-att ul li {
-    color: #0E2210;
-    margin-left: 550px;
-    margin-top: -40px;
-    margin-bottom: 60px;
+  color: #0E2210;
+  margin-left: 550px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 .cinque-att h4 {
-    margin-left: 40px;
-    color: #0E2210;
+  margin-left: 40px;
+  color: #0E2210;
 }
 .cinque-att ul li {
-    color: #0E2210;
-    margin-left: 550px;
-    margin-top: -40px;
-    margin-bottom: 60px;
+  color: #0E2210;
+  margin-left: 550px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 .tit-parchi h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  font-size: 35pt;
+color: white;
+padding-left: 40px;
+margin-top: -120px ;
 }
 .tit-parchi p {
-    margin-top: 120px;
-    margin-bottom: 60px;
-}
-.nav-parchi {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+  padding-top: 60px;
 }
 .otto-parchi {
-    max-width: 1000px;
-    margin-left: 225px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  padding-left: 60px;
+}
+.otto-parchi h5 {
+  width: 200px;
+  text-align: center;
 }
 .tit-etna h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  font-size: 35pt;
+color: white;
+padding-left: 40px;
+margin-top: -120px ;
+
 }
 .tit-etna p {
-    color: white;
-    margin-left: 40px ;
-    margin-top: -22px;
-    margin-bottom: 100px;
+  color: white;
+  padding-left: 40px;
+  margin-top: -30px;
+  font-size: 12pt;
+  padding-bottom: 80px;
 }
 .uno-etna {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.uno-etna h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.uno-etna p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
   
-  .uno-etna h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .uno-etna p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .uno-etna img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
+}
+
+.uno-etna img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
 .due-etna {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .due-etna h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .due-etna p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .due-etna img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .tre-etna {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .tre-etna h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .tre-etna p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .tre-etna img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .quattro-etna {
-    margin-top: 100px;
-    display: flex;
-  }
-  
-  .quattro-etna h4 {
-    color: #0E2210;
-    margin-left: 40px;
-  }
-  
-  .quattro-etna p {
-    color: #0E2210;
-    text-align: justify; 
-    margin-left: 258px;
-  }
-  .tit-sila h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.due-etna h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.due-etna p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.due-etna img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.tre-etna {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tre-etna h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.tre-etna p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.tre-etna img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.quattro-etna {
+  margin-top: 100px;
+  display: flex;
+}
+
+.quattro-etna h4 {
+  color: #0E2210;
+  margin-left: 40px;
+}
+
+.quattro-etna p {
+  color: #0E2210;
+  text-align: justify; 
+  margin-left: 258px;
+}
+.tit-sila h1 {
+  font-size: 35pt;
+  margin-top: -120px;
+  margin-left: 40px;
+  color: white;
 }
 .tit-sila p {
-    color: white;
-    margin-left: 40px ;
-    margin-top: -22px;
-    margin-bottom: 100px;
+  color: white;
+  padding-left: 40px ;
+  margin-top: -22px;
+  margin-bottom: 100px;
 }
 .uno-sila {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .uno-sila h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .uno-sila p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .uno-sila img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.uno-sila h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.uno-sila p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.uno-sila img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
 .due-sila {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .due-sila h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .due-sila p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .due-sila img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .tre-sila {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .tre-sila h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .tre-sila p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .tre-sila img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .quattro-sila {
-    margin-top: 100px;
-    display: flex;
-  }
-  
-  .quattro-sila h4 {
-    color: #0E2210;
-    margin-left: 40px;
-  }
-  
-  .quattro-sila p {
-    color: #0E2210;
-    text-align: justify; 
-    margin-left: 258px;
-  }
-  .tit-tosca h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.due-sila h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.due-sila p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.due-sila img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.tre-sila {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tre-sila h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.tre-sila p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.tre-sila img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.quattro-sila {
+  margin-top: 100px;
+  display: flex;
+}
+
+.quattro-sila h4 {
+  color: #0E2210;
+  margin-left: 40px;
+}
+
+.quattro-sila p {
+  color: #0E2210;
+  text-align: justify; 
+  margin-left: 258px;
+}
+.tit-tosca h1 {
+  font-size: 35pt;
+  margin-top: -120px;
+  margin-left: 40px;
+  color: white;
 }
 .tit-tosca p {
-    color: white;
-    margin-left: 40px ;
-    margin-top: -22px;
-    margin-bottom: 100px;
+  color: white;
+  padding-left: 40px ;
+  margin-top: -22px;
+  margin-bottom: 100px;
 }
 .uno-tosca {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .uno-tosca h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .uno-tosca p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .uno-tosca img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.uno-tosca h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.uno-tosca p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.uno-tosca img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
 .due-tosca {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .due-tosca h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .due-tosca p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .due-tosca img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .tre-tosca {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .tre-tosca h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .tre-tosca p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .tre-tosca img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .quattro-tosca {
-    margin-top: 100px;
-    display: flex;
-  }
-  
-  .quattro-tosca h4 {
-    color: #0E2210;
-    margin-left: 40px;
-  }
-  
-  .quattro-tosca p {
-    color: #0E2210;
-    text-align: justify; 
-    margin-left: 258px;
-  }
-  .tit-ve h1 {
-    font-size: 35pt;
-    margin-top: -120px;
-    margin-left: 40px;
-    color: white;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.due-tosca h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.due-tosca p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.due-tosca img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.tre-tosca {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tre-tosca h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.tre-tosca p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.tre-tosca img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.quattro-tosca {
+  margin-top: 100px;
+  display: flex;
+}
+
+.quattro-tosca h4 {
+  color: #0E2210;
+  margin-left: 40px;
+}
+
+.quattro-tosca p {
+  color: #0E2210;
+  text-align: justify; 
+  margin-left: 258px;
+}
+.tit-ve h1 {
+  font-size: 35pt;
+  margin-top: -120px;
+  margin-left: 40px;
+  color: white;
 }
 .tit-ve p {
-    color: white;
-    margin-left: 40px ;
-    margin-top: -22px;
-    margin-bottom: 100px;
+  color: white;
+  padding-left:  40px ;
+  margin-top: -22px;
+  margin-bottom: 100px;
 }
 .uno-ve {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .uno-ve h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .uno-ve p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .uno-ve img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.uno-ve h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.uno-ve p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.uno-ve img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
 .due-ve {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.due-ve h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.due-ve p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.due-ve img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.tre-ve {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tre-ve h4 {
+  color: #0E2210;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.tre-ve p {
+  color: #0E2210;
+  flex: 2;
+  text-align: justify; 
+  text-align-last: left; 
+}
+
+.tre-ve img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.quattro-ve {
+  margin-top: 100px;
+  display: flex;
+}
+
+.quattro-ve h4 {
+  color: #0E2210;
+  margin-left: 40px;
+}
+
+.quattro-ve p {
+  color: #0E2210;
+  text-align: justify; 
+  margin-left: 258px;
+}
+
+@media (max-width:768px) {
+
+  .home-main h1 {
+    font-size: 25pt;
+ 
   }
+  .bio {
   
-  .due-ve h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .due-ve p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .due-ve img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .tre-ve {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .tre-ve h4 {
-    color: #0E2210;
-    flex: 1;
-    margin-left: 40px;
-  }
-  
-  .tre-ve p {
-    color: #0E2210;
-    flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
-  }
-  
-  .tre-ve img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .quattro-ve {
-    margin-top: 100px;
-    display: flex;
-  }
-  
-  .quattro-ve h4 {
-    color: #0E2210;
-    margin-left: 40px;
-  }
-  
-  .quattro-ve p {
-    color: #0E2210;
-    text-align: justify; 
-    margin-left: 258px;
-  }
-  @media (max-width:600px) {
-    body {width: 100%;}
-    .immagine {width: 600px;
-  }
-  header {
-    overflow-x: hidden;
-  }
-    header nav a {
-  margin-left: -300px;
-     font-size: 8pt;}
-     .home-main h1 {
-      font-size: 28pt;}
-      .bio {
-        font-size: 8pt;}
-         .home-main h3 {
-        font-size: 18px; }
-        p {
-          margin-right: 40px;
-          font-size: 10pt;
-        }
-      .foto {
-        flex-wrap: wrap;       
-      justify-content: center;
-        gap: 90px;}
-        .foto img {
-          width: 200px;
-          height: auto;
-        }
-        nav.cinque img{
-          width: 490px;
-          height: auto;
-        }
-        h1.h1-2 {
-          color: #0E2210;
-          margin-left: 50px;
-          margin-top:40px;
-          font-size: 28px;
-      }
-      p.parchi {
-        margin-left: 50px;
-        margin-top: 30px;
-    }
-    .main-att h1 {
-      font-size: 28pt;}
-      .des p {
-        margin-right: 60px;
-      }
-      .foto-att img {
-        width: 400px;
-        height: auto;
-        margin-left: 60px;
+    font-size: 8pt;
     
-    }
-    .paragrafo p {
-      color: #0E2210;
-      margin-top: 30px;
-      margin-left: -30px;
-      margin-right: 200px;
-      font-weight: lighter;
-      background-color: white;
   }
-  footer {
-    width: 520px;
-  }
-  .main-att h3 {
-  font-size: 18px;
-  margin-top: 30px;
-  }
-  .uno-att h4 {
-  font-size: 15px;
-  }
-  .uno-att ul li {
-    font-size: 10pt;
-    margin-left: 20px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-  }
-  .due-att h4 {
+  .home-main h3 {
+
+    padding-top: 60px;
     font-size: 15px;
-    }
-    .due-att ul li {
-      font-size: 10pt;
-      margin-left: 20px;
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-    .tre-att h4 {
-      font-size: 15px;
-      }
-      .tre-att ul li {
-        font-size: 10pt;
-        margin-left: 20px;
-        margin-top: 35px;
-        margin-bottom: 20px;
-      }
-      .quattro-att h4 {
-        font-size: 15px;
-        }
-        .quattro-att ul li {
-          font-size: 10pt;
-          margin-left: 20px;
-          margin-top: 40px;
-          margin-bottom: 20px;
-        }
-        .cinque-att h4 {
-          font-size: 15px;
-          }
-          .cinque-att ul li {
-            font-size: 10pt;
-            margin-left: 20px;
-            margin-top: 45px;
-            margin-bottom: 20px;
-          }
-   .tit-parchi h1 {
-    font-size: 28pt;      
   }
-  .nav-parchi {
-    flex-wrap: wrap;       
-      justify-content: center;
-        gap: 90px;
+  p {
+ 
+   font-size: 10pt;
+  
   }
-  .nav-parchi img {
-    width: 200px;
-    height: auto;
+
+  .foto nav h5 {
+    font-size: 8pt;
+  
+  }
+
+  
+  .atti-text h2 {
+    padding-left: 40px;
+    font-size: 15px;
+  }
+  
+  .atti-text p {
+  font-size: 8pt;
+  
+  }
+  .otto-parchi {
+    padding-right: 20px;
+    padding-left: 100px;
   }
   .otto-parchi img {
     width: 100px;
     height: auto;
-    gap: 20px;
-    margin-left: -130px;
+    
+  }
+  .otto-parchi h5 {
+    font-size: 6pt;
+   width: 100px;
+ 
+  }
+  .tit-parchi h1 {
+    font-size: 25pt;
+  }
+  .tit-parchi p {
+    padding-top: 100px;
+  }
+  .main-att h1 {
+    font-size: 25pt;
+  
+  }
+  .des p {
+    padding-top: 100px;
+    margin: auto;
+  }
+.fotopa {
+  display: flex;
+  flex-direction: column;
+}
+
+  .paragrafo p {
+    padding-right: 60px;
+    padding-top: 40px;
+    line-height: 1.6;
+    font-size: 12px;
+
+    
+  }
+  .aa {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 40px;
+   
+  }
+  .uno-att ul li {
+    padding-top: 40px;
+   margin: auto;
+   text-align: left;
+   font-size: 10pt;
+  }
+  
+  .due-att ul li {
+    margin: auto;
+    text-align: left;
+    font-size: 10pt;
+  }
+ 
+  .tre-att ul li {
+    margin: auto;
+   text-align: left;
+   font-size: 10pt;
+  }
+ 
+  .quattro-att ul li {
+    margin: auto;
+   text-align: left;
+   font-size: 10pt;
+  }
+ 
+  .cinque-att ul li {
+    margin: auto;
+   text-align: left;
+   font-size: 10pt;
   }
   .tit-etna h1 {
-    font-size: 28pt;
+    font-size: 25pt;
+  
   }
   .tit-etna p {
+    color: white;
+    padding-left: 40px;
+    margin-top: -10px;
+    font-size: 8pt;
+    padding-bottom: 80px;
+  }
+  .etnapa {
     font-size: 8pt;
   }
-  .etna-main p {
-    font-size: 12px;
+  .tit-sila h1 {
+    font-size: 25pt;
+  
+  }
+  .tit-sila p {
+    color: white;
+    padding-left: 40px;
+    margin-top: -10px;
+    font-size: 8pt;
+    padding-bottom: 80px;
+  }
+  .silapa {
+    font-size: 8pt;
+    margin-top: -80px;
+  }
+  .tit-tosca h1 {
+    font-size: 25pt;
+    width: 400px;
+  
+  }
+  .tit-tosca p {
+    color: white;
+    padding-left: 40px;
+    margin-top: -20px;
+    font-size: 8pt;
+    padding-bottom: 80px;
+  }
+  .toscapa {
+    font-size: 8pt;
+    margin-top: -100px;
+  }
+  .tit-ve h1 {
+    font-size: 25pt;
+  
+  }
+  .tit-ve p {
+    color: white;
+    padding-left: 40px;
+    margin-top: -10px;
+    font-size: 8pt;
+    padding-bottom: 80px;
+  }
+  .vepa {
+    font-size: 8pt;
+    margin-top: -80px;
   }
   .uno-etna {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .uno-etna h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .uno-etna p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -826,30 +914,28 @@ footer nav ul li a:hover {
   
   .uno-etna img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .due-etna {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .due-etna h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .due-etna p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -858,30 +944,28 @@ footer nav ul li a:hover {
   
   .due-etna img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .tre-etna {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .tre-etna h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .tre-etna p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -890,64 +974,48 @@ footer nav ul li a:hover {
   
   .tre-etna img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .quattro-etna {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .quattro-etna h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .quattro-etna p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
-    margin-top: 2px;
-    margin-left: 95px;
-    margin-right: 165px;
-  }
-  .tit-sila h1 {
-    font-size: 28pt;
-  }
-  .tit-sila p {
-    font-size: 8pt;
-  }
-  .sila-main p {
-    font-size: 12px;
+   margin: auto;
   }
   .uno-sila {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .uno-sila h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .uno-sila p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -956,30 +1024,28 @@ footer nav ul li a:hover {
   
   .uno-sila img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .due-sila {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .due-sila h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .due-sila p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -988,30 +1054,28 @@ footer nav ul li a:hover {
   
   .due-sila img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .tre-sila {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .tre-sila h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .tre-sila p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1020,65 +1084,48 @@ footer nav ul li a:hover {
   
   .tre-sila img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .quattro-sila {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .quattro-sila h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .quattro-sila p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
-    margin-top: 2px;
-    margin-left: 95px;
-    margin-right: 165px;
-  }
-  .tit-tosca h1 {
-    font-size: 28pt;
-    margin-top: -150px;
-  }
-  .tit-tosca p {
-    font-size: 8pt;
-  }
-  .tosca-main p {
-    font-size: 12px;
+   margin: auto;
   }
   .uno-tosca {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .uno-tosca h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .uno-tosca p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1087,30 +1134,28 @@ footer nav ul li a:hover {
   
   .uno-tosca img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .due-tosca {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .due-tosca h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .due-tosca p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1119,30 +1164,28 @@ footer nav ul li a:hover {
   
   .due-tosca img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .tre-tosca {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .tre-tosca h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .tre-tosca p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1151,64 +1194,48 @@ footer nav ul li a:hover {
   
   .tre-tosca img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .quattro-tosca {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .quattro-tosca h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .quattro-tosca p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
-    margin-top: 2px;
-    margin-left: 95px;
-    margin-right: 165px;
-  }
-  .tit-ve h1 {
-    font-size: 28pt;
-  }
-  .tit-ve p {
-    font-size: 8pt;
-  }
-  .ve-main p {
-    font-size: 12px;
+   margin: auto;
   }
   .uno-ve {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .uno-ve h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .uno-ve p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1217,30 +1244,28 @@ footer nav ul li a:hover {
   
   .uno-ve img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .due-ve {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .due-ve h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .due-ve p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1249,30 +1274,28 @@ footer nav ul li a:hover {
   
   .due-ve img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .tre-ve {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .tre-ve h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .tre-ve p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
     margin-top: 2px;
     margin-left: 90px;
@@ -1281,36 +1304,29 @@ footer nav ul li a:hover {
   
   .tre-ve img {
     flex: 1;
-   width: 20px;
+   width: 200px;
     height: auto;
+    margin: auto;
     object-fit: cover; 
   }
   .quattro-ve {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
   }
   
   .quattro-ve h4 {
     color: #0E2210;
     flex: 1;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin: auto;
     font-size: 10pt;
   }
   
   .quattro-ve p {
     color: #0E2210;
     flex: 2;
-    text-align: justify; 
-    text-align-last: left; 
     font-size: 8pt;
-    margin-top: 2px;
-    margin-left: 95px;
-    margin-right: 165px;
+   margin: auto;
   }
-  
-  
-  
-  }
+}
